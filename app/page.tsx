@@ -7,6 +7,7 @@ import { Menu, Instagram, Youtube, Linkedin, Phone, Mail, MapPin } from "lucide-
 import { useEffect, useState, useRef } from "react"
 import { motion, useInView } from "framer-motion"
 import type { Metadata } from "next"
+import Image from "next/image"
 
 // Header Component
 function Header() {
@@ -21,9 +22,11 @@ function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center">
-            <img 
-              src="/FitnessAannemer_Logo_FA_Blauw.png" 
-              alt="FitnessAannemer Logo" 
+            <Image
+              src="/FitnessAannemer_Logo_FA_Blauw.png"
+              alt="FitnessAannemer Logo"
+              width={200}
+              height={64}
               className="h-16 w-auto"
             />
           </div>
@@ -62,9 +65,11 @@ function Header() {
                 <div className="flex flex-col h-full">
                   <div className="flex-1">
                     <div className="flex items-center mb-12">
-                      <img 
-                        src="/FitnessAannemer_Logo_FA_Blauw.png" 
-                        alt="FitnessAannemer Logo" 
+                      <Image
+                        src="/FitnessAannemer_Logo_FA_Blauw.png"
+                        alt="FitnessAannemer Logo"
+                        width={200}
+                        height={64}
                         className="h-16 w-auto"
                       />
                     </div>
@@ -104,13 +109,15 @@ function Hero() {
   return (
     <section className="relative h-screen w-full">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/FULL-Ballin-Fit-019-WF106925-scaled.jpg')`,
-        }}
+      <Image
+        src="/FULL-Ballin-Fit-019-WF106925-scaled.jpg"
+        alt="Hero background"
+        fill
+        className="object-cover object-center"
+        priority
       />
-      
+      <div className="absolute inset-0 bg-black/70" />
+
       <Header />
 
       {/* Content */}
@@ -175,10 +182,12 @@ function BrandCarousel() {
         <div className="flex items-center justify-around h-20 overflow-hidden">
           {brands.map((brand, index) => (
             <div key={index}>
-              <img
+              <Image
                 src={brand.logo}
                 alt={brand.name}
-                className="h-16 object-contain brightness-0 invert"
+                width={150}
+                height={64}
+                className="h-16 w-auto object-contain brightness-0 invert"
               />
             </div>
           ))}
@@ -264,9 +273,11 @@ function Services() {
           </div>
           <AnimatedSection>
             <div className="relative">
-              <img
+              <Image
                 src="/FULL-Ballin-Fit-016-WF106882-scaled.jpg"
                 alt="Complete gym inrichting"
+                width={600}
+                height={400}
                 className="w-full h-auto object-cover"
               />
             </div>
@@ -414,13 +425,13 @@ function Projects() {
           <div key={project.id} className="relative group cursor-pointer overflow-hidden">
             {/* Full corner-to-corner background image */}
             <motion.div
-              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-              style={{
-                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('${project.image}')`,
-              }}
+              className="absolute inset-0"
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-            />
+            >
+              <Image src={project.image} alt={project.title} fill className="object-cover object-center" />
+            </motion.div>
+            <div className="absolute inset-0 bg-black/40" />
 
             {/* Project info overlay - positioned directly on image */}
             <div className="absolute inset-0 flex items-end">
@@ -480,14 +491,19 @@ function Equipment() {
             {equipmentCategories.map((category, index) => (
               <AnimatedSection key={index}>
                 <div className="group cursor-pointer">
-                  <div className="relative overflow-hidden">
-                    <motion.img
-                      src={category.image || "/placeholder.svg"}
-                      alt={category.title}
-                      className="w-full h-64 object-cover"
+                  <div className="relative overflow-hidden h-64">
+                    <motion.div
+                      className="absolute inset-0"
                       whileHover={{ scale: 1.05 }}
                       transition={{ duration: 0.3 }}
-                    />
+                    >
+                      <Image
+                        src={category.image || "/placeholder.svg"}
+                        alt={category.title}
+                        fill
+                        className="object-cover"
+                      />
+                    </motion.div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                     <div className="absolute bottom-0 left-0 right-0 p-6">
                       <div className="w-8 h-0.5 bg-blue-500 mb-3" />
@@ -537,11 +553,12 @@ function About() {
             </AnimatedSection>
 
             <AnimatedSection>
-              <div className="relative">
-                <img
+              <div className="relative h-80">
+                <Image
                   src="/WhatsApp-Image-2025-06-25-at-14.05.42-5.jpeg"
                   alt="FitnessWijzer consultation"
-                  className="w-full h-80 object-cover"
+                  fill
+                  className="object-cover"
                 />
                 <div className="absolute top-0 left-0 w-full h-0.5 bg-blue-500" />
               </div>
@@ -578,14 +595,19 @@ function Videos() {
             {[1, 2, 3].map((video) => (
               <AnimatedSection key={video}>
                 <div className="group cursor-pointer">
-                  <div className="relative">
-                    <motion.img
-                      src={`/placeholder.svg?height=400&width=225&query=gym video ${video}`}
-                      alt={`Video ${video}`}
-                      className="w-full h-96 object-cover mx-auto max-w-[225px]"
+                  <div className="relative h-96 mx-auto max-w-[225px] w-full">
+                    <motion.div
+                      className="absolute inset-0"
                       whileHover={{ scale: 1.05 }}
                       transition={{ duration: 0.3 }}
-                    />
+                    >
+                      <Image
+                        src={`/placeholder.svg?height=400&width=225&query=gym video ${video}`}
+                        alt={`Video ${video}`}
+                        fill
+                        className="object-cover"
+                      />
+                    </motion.div>
                     <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors" />
                     <div className="absolute inset-0 flex items-center justify-center">
                       <motion.div 
