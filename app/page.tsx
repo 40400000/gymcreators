@@ -8,17 +8,6 @@ import { useEffect, useState, useRef } from "react"
 import { motion, useInView } from "framer-motion"
 import type { Metadata } from "next"
 
-export const metadata: Metadata = {
-  title: "FitnessAannemer - Complete gym inrichting van A tot Z",
-  description: "Van eerste schets tot laatste schroef. Jij focust op je gym, wij doen de rest. Complete gym inrichting zonder omkijken.",
-  keywords: "gym inrichting, fitness apparatuur, gym design, sportschool inrichting, fitness aannemer",
-  openGraph: {
-    title: "FitnessAannemer - Complete gym inrichting van A tot Z",
-    description: "Van eerste schets tot laatste schroef. Jij focust op je gym, wij doen de rest.",
-    type: "website",
-  },
-}
-
 // Header Component
 function Header() {
   return (
