@@ -23,7 +23,7 @@ function Header() {
           {/* Logo */}
           <div className="flex items-center">
             <Image
-              src="/FitnessAannemer_Logo_FA_Blauw.png"
+              src="/logo.png"
               alt="FitnessAannemer Logo"
               width={200}
               height={64}
@@ -33,26 +33,26 @@ function Header() {
 
           {/* Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <a href="#" className="text-white hover:text-blue-500 transition-colors font-normal text-sm tracking-wide">
+            <a href="#" className="text-white hover:text-[#F27322] transition-colors font-normal text-sm tracking-wide">
               Onze aanpak
             </a>
-            <a href="#" className="text-white hover:text-blue-500 transition-colors font-normal text-sm tracking-wide">
+            <a href="#" className="text-white hover:text-[#F27322] transition-colors font-normal text-sm tracking-wide">
               Projecten
             </a>
-            <a href="#" className="text-white hover:text-blue-500 transition-colors font-normal text-sm tracking-wide">
+            <a href="#" className="text-white hover:text-[#F27322] transition-colors font-normal text-sm tracking-wide">
               Oplossingen
             </a>
-            <a href="#" className="text-white hover:text-blue-500 transition-colors font-normal text-sm tracking-wide">
+            <a href="#" className="text-white hover:text-[#F27322] transition-colors font-normal text-sm tracking-wide">
               Apparatuur
             </a>
-            <a href="#" className="text-white hover:text-blue-500 transition-colors font-normal text-sm tracking-wide">
+            <a href="#" className="text-white hover:text-[#F27322] transition-colors font-normal text-sm tracking-wide">
               Contact
             </a>
           </nav>
 
           {/* CTA Button */}
           <div className="flex items-center space-x-4">
-            <Button className="bg-blue-500 hover:bg-blue-600 text-white font-medium px-6 py-2 text-sm tracking-wide">
+            <Button className="bg-[#F27322] hover:bg-[#F27322] text-white font-medium px-6 py-2 text-sm tracking-wide">
               Offerte
             </Button>
             <Sheet>
@@ -74,19 +74,19 @@ function Header() {
                       />
                     </div>
                     <nav className="flex flex-col space-y-6">
-                      <a href="#" className="text-white hover:text-blue-500 transition-colors font-normal text-lg tracking-wide">
+                      <a href="#" className="text-white hover:text-[#F27322] transition-colors font-normal text-lg tracking-wide">
                         Onze aanpak
                       </a>
-                      <a href="#" className="text-white hover:text-blue-500 transition-colors font-normal text-lg tracking-wide">
+                      <a href="#" className="text-white hover:text-[#F27322] transition-colors font-normal text-lg tracking-wide">
                         Projecten
                       </a>
-                      <a href="#" className="text-white hover:text-blue-500 transition-colors font-normal text-lg tracking-wide">
+                      <a href="#" className="text-white hover:text-[#F27322] transition-colors font-normal text-lg tracking-wide">
                         Oplossingen
                       </a>
-                      <a href="#" className="text-white hover:text-blue-500 transition-colors font-normal text-lg tracking-wide">
+                      <a href="#" className="text-white hover:text-[#F27322] transition-colors font-normal text-lg tracking-wide">
                         Apparatuur
                       </a>
-                      <a href="#" className="text-white hover:text-blue-500 transition-colors font-normal text-lg tracking-wide">
+                      <a href="#" className="text-white hover:text-[#F27322] transition-colors font-normal text-lg tracking-wide">
                         Contact
                       </a>
                     </nav>
@@ -129,7 +129,7 @@ function Hero() {
               initial={{ width: 0 }}
               animate={{ width: "4rem" }}
               transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-              className="h-0.5 bg-blue-500 mb-12" 
+              className="h-0.5 bg-[#F27322] mb-12" 
             />
 
             <motion.h1 
@@ -138,9 +138,9 @@ function Hero() {
               transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
               className="text-5xl md:text-7xl font-bold leading-tight mb-12 text-white"
             >
-              Jouw eigen gym gerealiseerd
+              Al 15 jaar uw partner in 
               <br />
-              <span className="text-blue-500">door één partner</span>
+              <span className="text-[#F27322]">fitness oplossingen</span>
             </motion.h1>
 
             <motion.p 
@@ -149,16 +149,20 @@ function Hero() {
               transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
               className="text-xl font-light mb-12 max-w-2xl leading-relaxed text-gray-300"
             >
-              Van eerste schets tot laatste schroef. Jij focust op je gym, wij doen de rest.
+              Wij zijn gespecialiseerd in Custom Build Fitness Solutions. Van boksringen en bokszakophangsystemen tot complete gym-inrichtingen - alles op maat gemaakt in onze eigen fabriek.
             </motion.p>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
+              className="flex space-x-4"
             >
-              <Button className="bg-transparent border border-white text-white hover:bg-blue-500 hover:text-black hover:border-blue-500 px-8 py-3 font-medium transition-all duration-300">
-                Contact
+              <Button className="bg-[#F27322] hover:bg-[#F27322] text-white font-medium px-8 py-3 transition-all duration-300">
+                Bekijk Producten
+              </Button>
+              <Button className="bg-transparent border border-white text-white hover:bg-[#F27322] hover:text-black hover:border-[#F27322] px-8 py-3 font-medium transition-all duration-300">
+                Offerte Aanvragen
               </Button>
             </motion.div>
           </div>
@@ -242,9 +246,9 @@ function Services() {
           <div>
             <AnimatedSection>
               <div className="mb-16">
-                <div className="w-16 h-0.5 bg-blue-500 mb-8" />
+                <div className="w-16 h-0.5 bg-[#F27322] mb-8" />
                 <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white">
-                  Complete gym inrichting <span className="text-blue-500">zonder omkijken</span>
+                  Complete gym inrichting <span className="text-[#F27322]">zonder omkijken</span>
                 </h2>
                 <p className="text-lg font-light text-gray-300 leading-relaxed">
                   Een gym inrichten is meer dan alleen goede apparatuur. Het vraagt om slimme keuzes in ruimte
@@ -258,9 +262,9 @@ function Services() {
                 <AnimatedSection key={index}>
                   <div className="group">
                     <div className="flex items-start space-x-4">
-                      <div className="w-0.5 h-16 bg-blue-500 mt-2" />
+                      <div className="w-0.5 h-16 bg-[#F27322] mt-2" />
                       <div>
-                        <h3 className="text-xl font-medium mb-4 text-white group-hover:text-blue-500 transition-colors">
+                        <h3 className="text-xl font-medium mb-4 text-white group-hover:text-[#F27322] transition-colors">
                           {service.title}
                         </h3>
                         <p className="text-gray-400 leading-relaxed">{service.description}</p>
@@ -321,9 +325,9 @@ function Process() {
           {/* Header */}
           <AnimatedSection>
             <div className="text-center mb-20">
-              <div className="w-16 h-0.5 bg-blue-500 mb-8 mx-auto" />
+              <div className="w-16 h-0.5 bg-[#F27322] mb-8 mx-auto" />
               <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white">
-                Van idee naar <span className="text-blue-500">winstgevende</span> fitnessruimte
+                Van idee naar <span className="text-[#F27322]">winstgevende</span> fitnessruimte
               </h2>
               <p className="text-lg font-light text-gray-300 max-w-4xl mx-auto leading-relaxed">
                 Wij zorgen ervoor dat jij niet alles alleen hoeft te doen. Met een doordachte aanpak begeleiden we je van
@@ -338,13 +342,13 @@ function Process() {
               <AnimatedSection key={index}>
                 <div className="flex items-start space-x-8">
                   <div className="flex items-center space-x-6">
-                    <div className="text-4xl font-light text-blue-500">{step.number}</div>
-                    <div className="w-16 h-0.5 bg-blue-500" />
+                    <div className="text-4xl font-light text-[#F27322]">{step.number}</div>
+                    <div className="w-16 h-0.5 bg-[#F27322]" />
                   </div>
 
                   <div className="flex-1">
                     <h3 className="text-2xl font-bold mb-3 text-white">{step.title}</h3>
-                    <h4 className="text-lg font-medium mb-4 text-blue-500">{step.subtitle}</h4>
+                    <h4 className="text-lg font-medium mb-4 text-[#F27322]">{step.subtitle}</h4>
                     <p className="text-gray-300 leading-relaxed max-w-3xl">{step.description}</p>
                   </div>
                 </div>
@@ -355,15 +359,15 @@ function Process() {
           {/* CTA */}
           <AnimatedSection>
             <div className="text-center mt-20">
-              <div className="w-16 h-0.5 bg-blue-500 mb-8 mx-auto" />
+              <div className="w-16 h-0.5 bg-[#F27322] mb-8 mx-auto" />
               <h3 className="text-3xl font-bold mb-6 text-white">
-                Altijd gericht op <span className="text-blue-500">winstgevendheid</span>
+                Altijd gericht op <span className="text-[#F27322]">winstgevendheid</span>
               </h3>
               <p className="text-lg font-light text-gray-300 mb-8 max-w-3xl mx-auto">
                 Een mooie gym is niet genoeg, het moet ook kloppen in de cijfers. Bij elke keuze kijken we niet alleen
                 naar uitstraling, maar vooral naar rendement.
               </p>
-              <Button className="bg-transparent border border-white text-white hover:bg-blue-500 hover:text-black hover:border-blue-500 px-8 py-3 font-medium transition-all duration-300">
+              <Button className="bg-transparent border border-white text-white hover:bg-[#F27322] hover:text-black hover:border-[#F27322] px-8 py-3 font-medium transition-all duration-300">
                 Onze aanpak bekijken
               </Button>
             </div>
@@ -412,9 +416,9 @@ function Projects() {
       {/* Header - only this has padding */}
       <div className="px-8 md:px-16 lg:px-24 py-24">
         <AnimatedSection>
-          <div className="w-16 h-0.5 bg-blue-500 mb-8" />
+          <div className="w-16 h-0.5 bg-[#F27322] mb-8" />
           <h2 className="text-4xl md:text-5xl font-bold text-white">
-            <span className="text-blue-500">Projecten</span>
+            <span className="text-[#F27322]">Projecten</span>
           </h2>
         </AnimatedSection>
       </div>
@@ -436,15 +440,15 @@ function Projects() {
             {/* Project info overlay - positioned directly on image */}
             <div className="absolute inset-0 flex items-end">
               <div className="p-8">
-                <div className="w-12 h-0.5 bg-blue-500 mb-4" />
+                <div className="w-12 h-0.5 bg-[#F27322] mb-4" />
                 <h3 className="text-2xl md:text-3xl font-bold mb-3 text-white">{project.title}</h3>
                 <p className="text-base font-light mb-4 text-gray-300">{project.description}</p>
-                <div className="inline-block bg-blue-500 text-black px-4 py-2 font-medium text-sm">{project.size}</div>
+                <div className="inline-block bg-[#F27322] text-black px-4 py-2 font-medium text-sm">{project.size}</div>
               </div>
             </div>
 
             {/* Hover overlay */}
-            <div className="absolute inset-0 bg-blue-500/0 group-hover:bg-blue-500/10 transition-colors duration-300" />
+            <div className="absolute inset-0 bg-[#F27322]/0 group-hover:bg-[#F27322]/10 transition-colors duration-300" />
           </div>
         ))}
       </div>
@@ -452,7 +456,7 @@ function Projects() {
       {/* All projects button - back to having padding */}
       <div className="px-8 md:px-16 lg:px-24 py-24 text-center">
         <AnimatedSection>
-          <Button className="bg-transparent border border-white text-white hover:bg-blue-500 hover:text-black hover:border-blue-500 px-8 py-3 font-medium transition-all duration-300">
+          <Button className="bg-transparent border border-white text-white hover:bg-[#F27322] hover:text-black hover:border-[#F27322] px-8 py-3 font-medium transition-all duration-300">
             Bekijk alle projecten
           </Button>
         </AnimatedSection>
@@ -479,9 +483,9 @@ function Equipment() {
           {/* Header */}
           <AnimatedSection>
             <div className="text-center mb-16">
-              <div className="w-16 h-0.5 bg-blue-500 mb-8 mx-auto" />
+              <div className="w-16 h-0.5 bg-[#F27322] mb-8 mx-auto" />
               <h2 className="text-4xl md:text-5xl font-bold text-white">
-                <span className="text-blue-500">Apparatuur</span>
+                <span className="text-[#F27322]">Apparatuur</span>
               </h2>
             </div>
           </AnimatedSection>
@@ -506,7 +510,7 @@ function Equipment() {
                     </motion.div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                     <div className="absolute bottom-0 left-0 right-0 p-6">
-                      <div className="w-8 h-0.5 bg-blue-500 mb-3" />
+                      <div className="w-8 h-0.5 bg-[#F27322] mb-3" />
                       <h3 className="text-xl font-medium text-white">{category.title}</h3>
                     </div>
                   </div>
@@ -518,7 +522,7 @@ function Equipment() {
           {/* CTA */}
           <AnimatedSection>
             <div className="text-center">
-              <Button className="bg-transparent border border-white text-white hover:bg-blue-500 hover:text-black hover:border-blue-500 px-8 py-3 font-medium transition-all duration-300">
+              <Button className="bg-transparent border border-white text-white hover:bg-[#F27322] hover:text-black hover:border-[#F27322] px-8 py-3 font-medium transition-all duration-300">
                 Bekijk alle apparatuur
               </Button>
             </div>
@@ -538,16 +542,37 @@ function About() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <AnimatedSection>
               <div>
-                <div className="w-16 h-0.5 bg-blue-500 mb-8" />
+                <div className="w-16 h-0.5 bg-[#F27322] mb-8" />
                 <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white">
-                  FitnessWijzer: <span className="text-blue-500">slimme keuzes</span> voor jouw fitnessruimte
+                  Onze <span className="text-[#F27322]">Werkwijze</span>
                 </h2>
                 <p className="text-lg font-light leading-relaxed mb-8 text-gray-300">
-                  Bekijk onze FitnessWijzer – een overzicht vol video's, tips en inzichten over kosten, apparatuur en
-                  inrichting van onder andere homegyms, PT-studio's en bedrijfsfitness.
+                  Wij zijn in 1991 gestart met een metaalfabriek en zijn in 2003 de fitnessbranche ingestapt. 
+                  Begonnen met trilplaten en gegroeid naar Custom Build Fitness Solutions. 
+                  Sinds 2014 richten wij ons volledig op het produceren van maatwerkoplossingen voor fitness.
                 </p>
-                <Button className="bg-transparent border border-white text-white hover:bg-blue-500 hover:text-black hover:border-blue-500 px-8 py-3 font-medium transition-all duration-300">
-                  FitnessWijzer
+                <div className="space-y-6 mb-8">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-0.5 h-16 bg-[#F27322] mt-2" />
+                    <div>
+                      <h3 className="text-xl font-medium mb-4 text-white">Eigen Fabriek</h3>
+                      <p className="text-gray-400 leading-relaxed">
+                        Alle producten worden 100% in eigen fabriek ontwikkeld en geproduceerd.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-4">
+                    <div className="w-0.5 h-16 bg-[#F27322] mt-2" />
+                    <div>
+                      <h3 className="text-xl font-medium mb-4 text-white">Persoonlijk Contact</h3>
+                      <p className="text-gray-400 leading-relaxed">
+                        Wij komen graag persoonlijk met u in contact om uw wensen en mogelijkheden te bespreken.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <Button className="bg-transparent border border-white text-white hover:bg-[#F27322] hover:text-black hover:border-[#F27322] px-8 py-3 font-medium transition-all duration-300">
+                  Meer Over Ons
                 </Button>
               </div>
             </AnimatedSection>
@@ -556,11 +581,11 @@ function About() {
               <div className="relative h-80">
                 <Image
                   src="/WhatsApp-Image-2025-06-25-at-14.05.42-5.jpeg"
-                  alt="FitnessWijzer consultation"
+                  alt="Your Fitness Factory workshop"
                   fill
                   className="object-cover"
                 />
-                <div className="absolute top-0 left-0 w-full h-0.5 bg-blue-500" />
+                <div className="absolute top-0 left-0 w-full h-0.5 bg-[#F27322]" />
               </div>
             </AnimatedSection>
           </div>
@@ -579,9 +604,9 @@ function Videos() {
           {/* Header */}
           <AnimatedSection>
             <div className="text-center mb-16">
-              <div className="w-16 h-0.5 bg-blue-500 mb-8 mx-auto" />
+              <div className="w-16 h-0.5 bg-[#F27322] mb-8 mx-auto" />
               <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white">
-                Bekijk hoe wij <span className="text-blue-500">fitnessruimtes</span> realiseren
+                Bekijk hoe wij <span className="text-[#F27322]">fitnessruimtes</span> realiseren
               </h2>
               <p className="text-lg font-light text-gray-300 max-w-4xl mx-auto leading-relaxed">
                 In deze video's delen we praktische tips, inspirerende projecten en slimme inzichten over het inrichten
@@ -611,13 +636,13 @@ function Videos() {
                     <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors" />
                     <div className="absolute inset-0 flex items-center justify-center">
                       <motion.div 
-                        className="w-12 h-12 bg-blue-500 flex items-center justify-center"
+                        className="w-12 h-12 bg-[#F27322] flex items-center justify-center"
                         whileHover={{ backgroundColor: "#FFFFFF" }}
                       >
                         <div className="w-0 h-0 border-l-4 border-l-black border-t-3 border-t-transparent border-b-3 border-b-transparent ml-1" />
                       </motion.div>
                     </div>
-                    <div className="absolute top-0 left-0 w-full h-0.5 bg-blue-500" />
+                    <div className="absolute top-0 left-0 w-full h-0.5 bg-[#F27322]" />
                   </div>
                 </div>
               </AnimatedSection>
@@ -660,9 +685,9 @@ function FAQ() {
           {/* Header */}
           <AnimatedSection>
             <div className="text-center mb-16">
-              <div className="w-16 h-0.5 bg-blue-500 mb-8 mx-auto" />
+              <div className="w-16 h-0.5 bg-[#F27322] mb-8 mx-auto" />
               <h2 className="text-4xl md:text-5xl font-bold text-white">
-                <span className="text-blue-500">Veelgestelde</span> vragen
+                <span className="text-[#F27322]">Veelgestelde</span> vragen
               </h2>
             </div>
           </AnimatedSection>
@@ -671,7 +696,7 @@ function FAQ() {
             {faqs.map((faq, index) => (
               <AnimatedSection key={index}>
                 <AccordionItem value={`item-${index}`} className="border border-gray-800 px-6">
-                  <AccordionTrigger className="text-left text-white hover:text-blue-500 text-lg font-medium py-6 hover:no-underline">
+                  <AccordionTrigger className="text-left text-white hover:text-[#F27322] text-lg font-medium py-6 hover:no-underline">
                     {faq.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-300 leading-relaxed pb-6">{faq.answer}</AccordionContent>
@@ -694,19 +719,18 @@ function Footer() {
         <div className="px-8 md:px-16 lg:px-24">
           <AnimatedSection>
             <div className="max-w-4xl mx-auto text-center">
-              <div className="w-16 h-0.5 bg-blue-500 mb-8 mx-auto" />
+              <div className="w-16 h-0.5 bg-[#F27322] mb-8 mx-auto" />
               <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white">
-                Fitness Aannemer is jouw partner voor <span className="text-blue-500">elke</span> fitnessruimte
+                Your Fitness Factory: <span className="text-[#F27322]">Custom Build</span> Fitness Solutions
               </h2>
               <p className="text-lg font-light leading-relaxed mb-8 text-gray-300">
-                Of je nu een eigen homegym, een boutique gym of een volwaardige commerciële sportschool wilt, bij ons ligt
-                de focus op maatwerk vanaf het eerste design tot de installatie.
+                Wij bouwen uw fitness apparatuur geheel naar uw wens. Van Hiit frames en sportvloeren tot een complete clubinrichting.
               </p>
               <p className="text-xl font-medium mb-12 text-white">
-                Vraag vrijblijvend een offerte aan en ontdek wat wij voor jou kunnen betekenen.
+                Persoonlijk contact en maatwerk staan bij ons centraal.
               </p>
-              <Button className="bg-blue-500 hover:bg-blue-600 text-white font-medium px-8 py-3 transition-all duration-300">
-                Offerte aanvragen
+              <Button className="bg-[#F27322] hover:bg-[#F27322] text-white font-medium px-8 py-3 transition-all duration-300">
+                Offerte Aanvragen
               </Button>
             </div>
           </AnimatedSection>
@@ -719,13 +743,13 @@ function Footer() {
           <AnimatedSection>
             <div className="max-w-4xl mx-auto text-center">
               <h3 className="text-2xl font-bold mb-6 text-white">
-                Vragen of <span className="text-blue-500">persoonlijk advies?</span>
+                Neem <span className="text-[#F27322]">contact</span> met ons op
               </h3>
               <p className="text-gray-300 mb-8">
-                We denken graag met je mee over de inrichting van jouw ideale fitnessruimte.
+                Wij komen graag persoonlijk met u in contact om uw wensen en mogelijkheden te bespreken.
               </p>
-              <Button className="bg-transparent border border-white text-white hover:bg-blue-500 hover:text-black hover:border-blue-500 px-8 py-3 font-medium transition-all duration-300 mb-12">
-                Vraag een adviesgesprek aan
+              <Button className="bg-transparent border border-white text-white hover:bg-[#F27322] hover:text-black hover:border-[#F27322] px-8 py-3 font-medium transition-all duration-300 mb-12">
+                Advies Aanvragen
               </Button>
 
               {/* Social Media */}
@@ -734,9 +758,9 @@ function Footer() {
                   <a
                     key={index}
                     href="#"
-                    className="w-10 h-10 bg-transparent border border-gray-600 hover:border-blue-500 flex items-center justify-center transition-colors"
+                    className="w-10 h-10 bg-transparent border border-gray-600 hover:border-[#F27322] flex items-center justify-center transition-colors"
                   >
-                    <Icon className="w-5 h-5 text-gray-400 hover:text-blue-500" />
+                    <Icon className="w-5 h-5 text-gray-400 hover:text-[#F27322]" />
                   </a>
                 ))}
               </div>
@@ -752,7 +776,7 @@ function Footer() {
             {/* Logo */}
             <div>
               <div className="text-lg font-bold mb-4 text-white">
-                FITNESS<span className="text-blue-500">AANNEMER</span>
+                YOUR FITNESS <span className="text-[#F27322]">FACTORY</span>
               </div>
               <p className="text-gray-400 text-sm">Copyright © 2025</p>
             </div>
@@ -761,9 +785,9 @@ function Footer() {
             <div>
               <h4 className="text-white font-medium mb-4 text-sm">OPENINGSTIJDEN</h4>
               <p className="text-gray-400 text-sm">
-                Maandag – Zaterdag
+                Maandag – Vrijdag
                 <br />
-                9:00 – 18:00
+                8:00 – 17:00
               </p>
             </div>
 
@@ -772,15 +796,15 @@ function Footer() {
               <h4 className="text-white font-medium mb-4 text-sm">CONTACT</h4>
               <div className="space-y-2">
                 <div className="flex items-center justify-center md:justify-start space-x-2">
-                  <Phone className="w-4 h-4 text-blue-500" />
-                  <a href="tel:0850609981" className="text-gray-400 hover:text-white text-sm">
-                    (085) 060 – 9981
+                  <Phone className="w-4 h-4 text-[#F27322]" />
+                  <a href="tel:0653381914" className="text-gray-400 hover:text-white text-sm">
+                    +31 (0) 6-53381914
                   </a>
                 </div>
                 <div className="flex items-center justify-center md:justify-start space-x-2">
-                  <Mail className="w-4 h-4 text-blue-500" />
-                  <a href="mailto:info@fitnessaannemer.nl" className="text-gray-400 hover:text-white text-sm">
-                    info@fitnessaannemer.nl
+                  <Mail className="w-4 h-4 text-[#F27322]" />
+                  <a href="mailto:verkoop@yourfitnessfactory.nl" className="text-gray-400 hover:text-white text-sm">
+                    verkoop@yourfitnessfactory.nl
                   </a>
                 </div>
               </div>
@@ -790,11 +814,13 @@ function Footer() {
             <div>
               <h4 className="text-white font-medium mb-4 text-sm">ADRES</h4>
               <div className="flex items-start justify-center md:justify-start space-x-2">
-                <MapPin className="w-4 h-4 text-blue-500 mt-1" />
+                <MapPin className="w-4 h-4 text-[#F27322] mt-1" />
                 <p className="text-gray-400 text-sm">
-                  Soerense Zand Zuid 13
+                  Griendweg 5
                   <br />
-                  6961 RA Eerbeek
+                  3295 KV 's-Gravendeel
+                  <br />
+                  The Netherlands
                 </p>
               </div>
             </div>
