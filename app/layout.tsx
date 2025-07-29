@@ -14,11 +14,11 @@ const geistMono = Geist_Mono({
 
 
 export const metadata: Metadata = {
-  title: "FitnessAannemer - Complete gym inrichting zonder omkijken",
+  title: "GymCreators - Complete gym inrichting zonder omkijken",
   description: "Van eerste schets tot laatste schroef. Jij focust op je gym, wij doen de rest. Complete gym inrichting zonder omkijken.",
   keywords: "gym inrichting, fitness apparatuur, gym design, sportschool inrichting, fitness aannemer",
   openGraph: {
-    title: "FitnessAannemer - Complete gym inrichting zonder omkijken",
+    title: "GymCreators - Complete gym inrichting zonder omkijken",
     description: "Van eerste schets tot laatste schroef. Jij focust op je gym, wij doen de rest.",
     type: "website",
   },
