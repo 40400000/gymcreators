@@ -181,7 +181,7 @@ function BrandCarousel() {
   ]
 
   return (
-    <section className="hidden md:block bg-black py-16">
+    <section className=" bg-black py-16 hidden">
       <div className="px-8 md:px-16 lg:px-24">
         <div className="flex items-center justify-around h-20 overflow-hidden">
           {brands.map((brand, index) => (
